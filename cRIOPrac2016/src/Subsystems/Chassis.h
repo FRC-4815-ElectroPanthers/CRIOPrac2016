@@ -8,7 +8,7 @@
 class Chassis: public PIDSubsystem
 {
 private:
-	Talon *frontRight, *backRight, *frontLeft, *backLeft;
+	Victor *frontRight, *backRight, *frontLeft, *backLeft;
 	Encoder *right; //*leftFront;
 	//ADXRS450_Gyro *gyro;
 	double const DISTANCE_PER_PULSE = PI/8192;
