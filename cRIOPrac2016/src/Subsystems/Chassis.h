@@ -9,6 +9,7 @@ class Chassis: public PIDSubsystem
 {
 private:
 	Victor *frontRight, *backRight, *frontLeft, *backLeft;
+	RobotDrive *drive;
 	Encoder *right; //*leftFront;
 	//ADXRS450_Gyro *gyro;
 	double const DISTANCE_PER_PULSE = PI/8192;

@@ -12,10 +12,12 @@ Chassis::Chassis():
 	//                  to
 	// Enable() - Enables the PID controller.
 
-	frontRight = new Talon(FRONTRIGHT);
-	backRight = new Talon(BACKRIGHT);
-	frontLeft = new Talon(FRONTLEFT);
-	backLeft = new Talon(BACKLEFT);
+	frontRight = new Victor(FRONTRIGHT);
+	backRight = new Victor(BACKRIGHT);
+	frontLeft = new Victor(FRONTLEFT);
+	backLeft = new Victor(BACKLEFT);
+
+	drive = new RobotDrive(frontLeft, backLeft, frontRight, backRight);
 
 	//LeftFront = new Encoder(FL_ENC_A, FL_ENC_B, false, Encoder::EncodingType::k4X);
 	right = new Encoder(BR_ENC_A, BR_ENC_B, false, Encoder::EncodingType::k4X);
