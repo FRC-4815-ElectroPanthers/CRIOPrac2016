@@ -43,6 +43,8 @@ void Chassis::ArcadeDrive(float x, float y){ //may want to change to a vector ca
 	backRight->Set(right);
 	frontLeft->Set(left);
 	backLeft->Set(left);
+
+	drive->Drive(y, x);
 }
 
 void Chassis::ArcadeDriveThrust(float x, float y, float pedal){
