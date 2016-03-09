@@ -103,8 +103,13 @@
 						<toolChain id="com.penfieldrobotics.criotools.projtype.debug.tools.749870935" name="Thunder cRIO Tools" superClass="com.penfieldrobotics.criotools.projtype.debug.tools" unusedChildren="">
 							<option id="com.penfieldrobotics.criotools.crosstools.prefix.768178946.1642364839" name="Prefix" superClass="com.penfieldrobotics.criotools.crosstools.prefix.768178946"/>
 							<option id="com.penfieldrobotics.criotools.crosstools.path.168543265.1767321160" name="Path" superClass="com.penfieldrobotics.criotools.crosstools.path.168543265"/>
-							<tool id="com.penfieldrobotics.criotools.crosstools.ccompiler.584044190" name="Thunder cRIO Tools C Compiler" superClass="com.penfieldrobotics.criotools.crosstools.ccompiler.518147113"/>
-							<tool id="com.penfieldrobotics.criotools.crosstools.cppcompiler.780440045" name="Thunder cRIO Tools C++ Compiler" superClass="com.penfieldrobotics.criotools.crosstools.cppcompiler.1772888007"/>
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.penfieldrobotics.criotools.crosstools.tgtplatform" isAbstract="false" name="Thunder cRIO Tools Target Platform" superClass="com.penfieldrobotics.criotools.crosstools.tgtplatform"/>
+							<tool id="com.penfieldrobotics.criotools.crosstools.ccompiler.584044190" name="Thunder cRIO Tools C Compiler" superClass="com.penfieldrobotics.criotools.crosstools.ccompiler.518147113">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.957522598" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.penfieldrobotics.criotools.crosstools.cppcompiler.780440045" name="Thunder cRIO Tools C++ Compiler" superClass="com.penfieldrobotics.criotools.crosstools.cppcompiler.1772888007">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.763963046" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
 							<tool id="com.penfieldrobotics.criotools.crosstools.partiallinker.398720479" name="Thunder cRIO Tools Partial Linker" superClass="com.penfieldrobotics.criotools.crosstools.partiallinker.364981197"/>
 						</toolChain>
 					</folderInfo>
@@ -135,4 +140,6 @@
 			<resource resourceType="PROJECT" workspacePath="/cRIOPrac2016"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
